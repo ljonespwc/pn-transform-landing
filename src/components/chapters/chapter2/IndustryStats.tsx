@@ -102,7 +102,7 @@ export function IndustryStats() {
               ease: "easeOut"
             }}
           >
-            <div className="mb-6">
+            <div className="mb-2">
               <AnimatedCounter 
                 targetValue={stat.value} 
                 suffix={stat.suffix}

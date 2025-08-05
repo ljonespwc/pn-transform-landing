@@ -182,9 +182,6 @@ export default function Chapter2() {
                 Show Me the Solution
               </ContinueButton>
               
-              <p className="text-sm mt-4" style={{ color: '#64748b' }}>
-                Chapter 3 of 5 • 4 minutes remaining
-              </p>
             </div>
           </AnimatedSection>
         </div>

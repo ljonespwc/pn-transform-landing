@@ -264,7 +264,7 @@ export function BlameCycle() {
               This cycle generates billions in revenue because it creates repeat customers.
             </p>
             <p className="text-lg font-semibold" style={{ color: '#0284c7' }}>
-              But behavior infrastructure breaks this cycle by solving the actual problem.
+              But behavior systems break this cycle by solving the actual problem.
             </p>
           </div>
         ) : (
