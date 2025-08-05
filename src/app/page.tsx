@@ -1,103 +1,193 @@
-import Image from "next/image";
+import { ChapterContainer } from '@/components/layout/ChapterContainer'
+import { ContinueButton } from '@/components/ui/ContinueButton'
+import { ImagePlaceholder } from '@/components/ui/ImagePlaceholder'
+import { AnimatedSection } from '@/components/ui/AnimatedSection'
+import { ScrollProgress } from '@/components/ui/ScrollProgress'
+import { CycleVisualization } from '@/components/chapters/chapter1/CycleVisualization'
+import { RecognitionQuiz } from '@/components/chapters/chapter1/RecognitionQuiz'
+import { ValidationStats } from '@/components/chapters/chapter1/ValidationStats'
+import { MicroSurvey } from '@/components/chapters/chapter1/MicroSurvey'
 
-export default function Home() {
+export default function Chapter1() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
+      <ScrollProgress />
+      <ChapterContainer chapterNumber={1} backgroundColor="white">
+        {/* Main Headline Section */}
+        <AnimatedSection direction="fade" duration={0.8}>
+          <div className="text-center mb-12">
+            <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tight leading-tight" style={{ color: '#1e293b' }}>
+              The Real Reason You Can&apos;t Stick to Any Diet
+              <span className="block text-4xl md:text-5xl mt-4 font-bold" style={{ color: '#475569' }}>
+                (It&apos;s Not What You Think)
+              </span>
+            </h1>
+            <p className="text-lg md:text-xl font-medium" style={{ color: '#475569' }}>
+              You recognize this story because you&apos;ve lived it. Maybe multiple times.
+            </p>
+          </div>
+        </AnimatedSection>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* Hero Emotional Image */}
+      <div className="flex justify-center mb-8">
+        <ImagePlaceholder 
+          width={600}
+          height={400}
+          mobileWidth={400}
+          mobileHeight={300}
+          description="Person looking frustrated/overwhelmed in front of mirror or scale - captures the emotional weight of repeated diet failures"
+        />
+      </div>
+
+        {/* Main Narrative Section */}
+        <AnimatedSection direction="up" delay={0.2}>
+          <div className="max-w-3xl mx-auto text-left mb-16">
+            <p className="text-lg md:text-xl leading-relaxed mb-6" style={{ color: '#1e293b' }}>
+              You know this story by heart because you&apos;ve lived it. Maybe multiple times.
+            </p>
+            
+            <p className="text-lg md:text-xl leading-relaxed mb-6" style={{ color: '#1e293b' }}>
+              It always starts the same way: Monday morning motivation. You&apos;ve done your research, found the perfect plan, and this time—<em>this time</em>—things will be different. You can feel it.
+            </p>
+
+            {/* Monday Motivation Image */}
+            <div className="flex justify-center my-8">
+              <ImagePlaceholder 
+                width={400}
+                height={250}
+                description="Fresh vegetables, workout gear, meal prep containers - represents the excitement and preparation of starting fresh"
+              />
+            </div>
+            
+            <p className="text-lg md:text-xl leading-relaxed mb-6" style={{ color: '#1e293b' }}>
+              Week one is intoxicating. You follow the plan flawlessly. The scale moves. Your clothes feel looser. You post progress photos and get encouraging comments. Finally, you think, you&apos;ve found something that works. You are <em>crushing</em> this.
+            </p>
+
+            {/* Week One Success Image */}
+            <div className="flex justify-center my-8">
+              <ImagePlaceholder 
+                width={350}
+                height={200}
+                description="Person celebrating small victory, loose-fitting clothes, or positive scale reading - captures the early success high"
+              />
+            </div>
+            
+            <p className="text-lg md:text-xl leading-relaxed mb-6" style={{ color: '#1e293b' }}>
+              Week two starts strong, but life begins to creep in. Work gets stressful. Your kid gets sick. You miss one workout, then two. You grab takeout because you didn&apos;t have time to meal prep. But you bounce back. You&apos;re still mostly on track.
+            </p>
+            
+            <p className="text-lg md:text-xl leading-relaxed mb-6" style={{ color: '#1e293b' }}>
+              By week three, the cracks are showing. The plan that felt so doable when you were motivated now feels overwhelming when you&apos;re exhausted. You find yourself eating the foods you swore off, often while standing in the kitchen, barely tasting them. The voice in your head starts getting louder: <span className="italic" style={{ color: '#475569' }}>&quot;You&apos;re doing it again.&quot;</span>
+            </p>
+            
+            <p className="text-lg md:text-xl leading-relaxed mb-6" style={{ color: '#1e293b' }}>
+              Week four arrives like a funeral. You&apos;ve completely abandoned the plan. The scale has not only stopped moving—it&apos;s moving in the wrong direction. The clothes that felt loose now feel tight again. Worst of all, that familiar shame settles in like fog.
+            </p>
+
+            {/* Week Four Defeat Image */}
+            <div className="flex justify-center my-8">
+              <ImagePlaceholder 
+                width={450}
+                height={300}
+                description="Person looking defeated, empty takeout containers, or tight clothes - represents the emotional low point"
+              />
+            </div>
+            
+            <p className="text-lg md:text-xl leading-relaxed mb-6" style={{ color: '#1e293b' }}>
+              You tell yourself the same story you&apos;ve told yourself before: <span className="italic" style={{ color: '#475569' }}>&quot;I must be broken. I have no willpower. Other people can stick to things—why can&apos;t I?&quot;</span>
+            </p>
+            
+            <p className="text-lg md:text-xl leading-relaxed mb-6" style={{ color: '#1e293b' }}>
+              So you start researching again. Maybe it was the wrong plan. Maybe you need something stricter. Maybe you need to try harder. The cycle begins anew, and with each restart, your confidence erodes a little more.
+            </p>
+            
+            <p className="text-lg md:text-xl leading-relaxed mb-6" style={{ color: '#1e293b' }}>
+              Here&apos;s what makes this devastating: You&apos;re not just dealing with the physical disappointment of regained weight. You&apos;re carrying the accumulated emotional damage of feeling like a failure, over and over again.
+            </p>
+            
+            <p className="text-lg md:text-xl leading-relaxed font-semibold" style={{ color: '#1e293b' }}>
+              But what if I told you that this cycle—every part of it—was entirely predictable? What if the problem was never your willpower, your discipline, or your character?
+            </p>
+          </div>
+        </AnimatedSection>
+
+      {/* Cycle Transition Image */}
+      <div className="flex justify-center mb-8">
+        <ImagePlaceholder 
+          width={500}
+          height={150}
+          description="Abstract circular arrows or cycle visualization - bridges story to interactive elements"
+        />
+      </div>
+
+        {/* Interactive Components Section */}
+        <div className="space-y-16 mb-16">
+          {/* Cycle Visualization - Blue Background */}
+          <div className="section-interactive">
+            <AnimatedSection direction="up" delay={0.1}>
+              <CycleVisualization />
+            </AnimatedSection>
+          </div>
+          
+          {/* Recognition Quiz - White Background for contrast */}
+          <AnimatedSection direction="up" delay={0.2}>
+            <RecognitionQuiz />
+          </AnimatedSection>
+          
+          {/* Statistics Section - Enhanced Warm Background */}
+          <div className="section-colored" style={{
+            background: 'linear-gradient(135deg, #e8a54e 0%, #f0b862 50%, #e8a54e 100%)',
+            boxShadow: 'inset 0 1px 0 rgba(255, 255, 255, 0.1)'
+          }}>
+            {/* Statistics Support Image */}
+            <div className="flex justify-center mb-8">
+              <ImagePlaceholder 
+                width={300}
+                height={200}
+                description="Data visualization or research imagery - reinforces the scientific backing"
+              />
+            </div>
+            
+            <AnimatedSection direction="up" delay={0.1}>
+              <ValidationStats />
+            </AnimatedSection>
+          </div>
+          
+          {/* Micro Survey - Blue Background */}
+          <div className="section-interactive">
+            <AnimatedSection direction="up" delay={0.2}>
+              <MicroSurvey />
+            </AnimatedSection>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+
+      {/* Hope/Anticipation Image */}
+      <div className="flex justify-center mb-8">
+        <ImagePlaceholder 
+          width={400}
+          height={250}
+          description="Person looking hopeful or sunrise/breakthrough imagery - builds anticipation for Chapter 2"
+        />
+      </div>
+
+        {/* Chapter Transition - Strong Call-to-Action Background */}
+        <div className="section-colored bg-primary-100">
+          <AnimatedSection direction="up" delay={0.3}>
+            <div className="text-center">
+              <p className="text-base md:text-lg mb-4 font-medium" style={{ color: '#475569' }}>
+                Next: The shocking truth about why diets are designed to fail
+              </p>
+              
+              <ContinueButton 
+                nextChapterPath="/chapter-2" 
+                currentChapter={1}
+              >
+                Show Me What&apos;s Really Happening
+              </ContinueButton>
+            </div>
+          </AnimatedSection>
+        </div>
+      </ChapterContainer>
+    </>
+  )
 }
