@@ -42,7 +42,7 @@ export default function Chapter2() {
             </p>
             
             <p className="text-lg md:text-xl leading-relaxed mb-6" style={{ color: '#1e293b' }}>
-              The entire $78 billion diet industry has been solving the wrong equation.
+              The entire <strong>$78 billion diet industry</strong> has been solving the <strong>wrong equation</strong>.
             </p>
 
             <p className="text-lg md:text-xl leading-relaxed mb-6" style={{ color: '#1e293b' }}>
@@ -50,7 +50,7 @@ export default function Chapter2() {
             </p>
 
             <p className="text-lg md:text-xl leading-relaxed mb-6" style={{ color: '#1e293b' }}>
-              But that&apos;s not actually the limiting factor for you, is it?
+              But that&apos;s not actually the <strong>limiting factor</strong> for you, is it?
             </p>
 
             {/* Overwhelm Image */}
@@ -63,7 +63,7 @@ export default function Chapter2() {
             </div>
 
             <p className="text-lg md:text-xl leading-relaxed mb-6" style={{ color: '#1e293b' }}>
-              You probably already know what&apos;s healthy. You&apos;ve had access to more nutritional information than any generation in human history. You could spend years learning about metabolism and insulin response. Most of you already have.
+              You probably <strong>already know</strong> what&apos;s healthy. You&apos;ve had access to more nutritional information than any generation in human history. You could spend years learning about metabolism and insulin response. <strong>Most of you already have.</strong>
             </p>
             
             <p className="text-lg md:text-xl leading-relaxed mb-6 font-semibold" style={{ color: '#1e293b' }}>
@@ -79,7 +79,7 @@ export default function Chapter2() {
             </p>
 
             <p className="text-lg md:text-xl leading-relaxed mb-6 font-medium" style={{ color: '#1e293b' }}>
-              These aren&apos;t edge cases. This is life.
+              These aren&apos;t edge cases. <strong>This is life.</strong>
             </p>
 
             {/* Real Life Chaos Image */}
@@ -92,7 +92,7 @@ export default function Chapter2() {
             </div>
 
             <p className="text-lg md:text-xl leading-relaxed mb-6" style={{ color: '#1e293b' }}>
-              But the diet industry pretends these situations don&apos;t exist. They hand you a meal plan designed for someone who lives in a controlled laboratory, then act surprised when you can&apos;t follow it in the real world.
+              But the diet industry <strong>pretends these situations don&apos;t exist</strong>. They hand you a meal plan designed for someone who lives in a <strong>controlled laboratory</strong>, then act surprised when you can&apos;t follow it in the real world.
             </p>
 
             <p className="text-lg md:text-xl leading-relaxed mb-6 font-semibold" style={{ color: '#1e293b' }}>
@@ -104,7 +104,7 @@ export default function Chapter2() {
             </p>
 
             <p className="text-lg md:text-xl leading-relaxed mb-6" style={{ color: '#1e293b' }}>
-              This isn&apos;t an accident. It&apos;s a feature, not a bug. Because when you blame yourself instead of the flawed system, you become the perfect customer. You&apos;ll try the next program, and the next one, and the next one.
+              This isn&apos;t an accident. <strong>It&apos;s a feature, not a bug.</strong> Because when you blame yourself instead of the flawed system, you become the <strong>perfect customer</strong>. You&apos;ll try the next program, and the next one, and the next one.
             </p>
 
             <p className="text-lg md:text-xl leading-relaxed mb-6" style={{ color: '#1e293b' }}>

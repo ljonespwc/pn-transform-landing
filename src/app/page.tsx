@@ -40,11 +40,11 @@ export default function Chapter1() {
         <AnimatedSection direction="up" delay={0.2}>
           <div className="max-w-3xl mx-auto text-left mb-16">
             <p className="text-lg md:text-xl leading-relaxed mb-6" style={{ color: '#1e293b' }}>
-              You know this story by heart because you&apos;ve lived it. Maybe multiple times.
+              You know this story <strong>by heart</strong> because you&apos;ve lived it. <strong>Maybe multiple times.</strong>
             </p>
             
             <p className="text-lg md:text-xl leading-relaxed mb-6" style={{ color: '#1e293b' }}>
-              It always starts the same way: Monday morning motivation. You&apos;ve done your research, found the perfect plan, and this time—<em>this time</em>—things will be different. You can feel it.
+              It always starts the same way: <strong>Monday morning motivation</strong>. You&apos;ve done your research, found the perfect plan, and this time—<em>this time</em>—things will be different. <strong>You can feel it.</strong>
             </p>
 
             {/* Monday Motivation Image */}
@@ -57,7 +57,7 @@ export default function Chapter1() {
             </div>
             
             <p className="text-lg md:text-xl leading-relaxed mb-6" style={{ color: '#1e293b' }}>
-              Week one is intoxicating. You follow the plan flawlessly. The scale moves. Your clothes feel looser. You post progress photos and get encouraging comments. Finally, you think, you&apos;ve found something that works. You are <em>crushing</em> this.
+              <strong>Week one is intoxicating.</strong> You follow the plan flawlessly. The scale moves. Your clothes feel looser. You post progress photos and get encouraging comments. Finally, you think, you&apos;ve found something that works. You are <em>crushing</em> this.
             </p>
 
             {/* Week One Success Image */}
@@ -70,15 +70,15 @@ export default function Chapter1() {
             </div>
             
             <p className="text-lg md:text-xl leading-relaxed mb-6" style={{ color: '#1e293b' }}>
-              Week two starts strong, but life begins to creep in. Work gets stressful. Your kid gets sick. You miss one workout, then two. You grab takeout because you didn&apos;t have time to meal prep. But you bounce back. You&apos;re still mostly on track.
+              Week two starts strong, but <strong>life begins to creep in</strong>. Work gets stressful. Your kid gets sick. You miss one workout, then two. You grab takeout because you didn&apos;t have time to meal prep. But you bounce back. You&apos;re still mostly on track.
             </p>
             
             <p className="text-lg md:text-xl leading-relaxed mb-6" style={{ color: '#1e293b' }}>
-              By week three, the cracks are showing. The plan that felt so doable when you were motivated now feels overwhelming when you&apos;re exhausted. You find yourself eating the foods you swore off, often while standing in the kitchen, barely tasting them. The voice in your head starts getting louder: <span className="italic" style={{ color: '#475569' }}>&quot;You&apos;re doing it again.&quot;</span>
+              By week three, <strong>the cracks are showing</strong>. The plan that felt so doable when you were motivated now feels <strong>overwhelming</strong> when you&apos;re exhausted. You find yourself eating the foods you swore off, often while standing in the kitchen, barely tasting them. The voice in your head starts getting louder: <span className="italic" style={{ color: '#475569' }}>&quot;You&apos;re doing it again.&quot;</span>
             </p>
             
             <p className="text-lg md:text-xl leading-relaxed mb-6" style={{ color: '#1e293b' }}>
-              Week four arrives like a funeral. You&apos;ve completely abandoned the plan. The scale has not only stopped moving—it&apos;s moving in the wrong direction. The clothes that felt loose now feel tight again. Worst of all, that familiar shame settles in like fog.
+              <strong>Week four arrives like a funeral.</strong> You&apos;ve completely abandoned the plan. The scale has not only stopped moving—it&apos;s moving in the wrong direction. The clothes that felt loose now feel tight again. Worst of all, that <strong>familiar shame</strong> settles in like fog.
             </p>
 
             {/* Week Four Defeat Image */}
@@ -95,11 +95,11 @@ export default function Chapter1() {
             </p>
             
             <p className="text-lg md:text-xl leading-relaxed mb-6" style={{ color: '#1e293b' }}>
-              So you start researching again. Maybe it was the wrong plan. Maybe you need something stricter. Maybe you need to try harder. The cycle begins anew, and with each restart, your confidence erodes a little more.
+              So you start <strong>researching again</strong>. Maybe it was the wrong plan. Maybe you need something stricter. Maybe you need to try harder. <strong>The cycle begins anew</strong>, and with each restart, your confidence erodes a little more.
             </p>
             
             <p className="text-lg md:text-xl leading-relaxed mb-6" style={{ color: '#1e293b' }}>
-              Here&apos;s what makes this devastating: You&apos;re not just dealing with the physical disappointment of regained weight. You&apos;re carrying the accumulated emotional damage of feeling like a failure, over and over again.
+              Here&apos;s what makes this devastating: You&apos;re not just dealing with the physical disappointment of regained weight. You&apos;re carrying the <strong>accumulated emotional damage</strong> of feeling like a failure, <strong>over and over again</strong>.
             </p>
             
             <p className="text-lg md:text-xl leading-relaxed font-semibold" style={{ color: '#1e293b' }}>
