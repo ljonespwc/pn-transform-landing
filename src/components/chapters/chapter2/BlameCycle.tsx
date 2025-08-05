@@ -20,15 +20,15 @@ export function BlameCycle() {
     {
       id: 'try-diet',
       title: 'Try New Diet',
-      position: { desktop: 'top-0 left-1/2 transform -translate-x-1/2', mobile: 1 },
+      position: { desktop: '', mobile: 1 }, // Will be calculated
       industryMessage: '"This revolutionary approach will finally work for you!"',
       reality: 'Every diet markets itself as different, but they all ignore life mechanics.',
-      color: '#6b7280'
+      color: '#16a34a'
     },
     {
       id: 'life-messy',
       title: 'Life Gets Messy',
-      position: { desktop: 'top-1/4 right-0', mobile: 2 },
+      position: { desktop: '', mobile: 2 }, // Will be calculated
       industryMessage: '"Just stick to the plan, you can do this!"',
       reality: 'Real life emerges: stress, travel, illness, family drama. The plan doesn\'t account for any of it.',
       color: '#d97706'
@@ -36,7 +36,7 @@ export function BlameCycle() {
     {
       id: 'cant-maintain',
       title: 'Can\'t Maintain',
-      position: { desktop: 'bottom-1/4 right-0', mobile: 3 },
+      position: { desktop: '', mobile: 3 }, // Will be calculated
       industryMessage: '"You just need more willpower and discipline."',
       reality: 'No amount of willpower can overcome a system designed for perfect conditions.',
       color: '#dc2626'
@@ -44,7 +44,7 @@ export function BlameCycle() {
     {
       id: 'blame-self',
       title: 'Blame Yourself',
-      position: { desktop: 'bottom-0 left-1/2 transform -translate-x-1/2', mobile: 4 },
+      position: { desktop: '', mobile: 4 }, // Will be calculated
       industryMessage: '"The program works, you must have done something wrong."',
       reality: 'The system failed you, but the industry frames it as your personal failure.',
       color: '#dc2626'
@@ -52,12 +52,20 @@ export function BlameCycle() {
     {
       id: 'research-again',
       title: 'Research Again',
-      position: { desktop: 'bottom-1/4 left-0', mobile: 5 },
+      position: { desktop: '', mobile: 5 }, // Will be calculated
       industryMessage: '"Try this new approach that\'s completely different!"',
       reality: 'Different marketing, same fundamental flaw: ignoring how behavior change actually works.',
       color: '#6b7280'
     }
   ]
+
+  // Calculate positions for equal distribution around circle
+  const getCirclePosition = (index: number, total: number, radius: number) => {
+    const angle = (index * 2 * Math.PI) / total - Math.PI / 2 // Start at top
+    const x = Math.cos(angle) * radius
+    const y = Math.sin(angle) * radius
+    return { x, y, angle }
+  }
 
   return (
     <div className="py-8">
@@ -81,13 +89,13 @@ export function BlameCycle() {
 
       {/* Desktop Circular Layout */}
       <div className="hidden md:block">
-        <div className="relative w-96 h-96 mx-auto mb-12">
-          {/* Circular background */}
-          <div className="absolute inset-0 border-4 border-gray-300 rounded-full opacity-30"></div>
+        <div className="relative w-[500px] h-[500px] mx-auto mb-12">
+          {/* Circular background guide */}
+          <div className="absolute inset-0 border-2 border-gray-200 rounded-full opacity-30"></div>
           
           {/* Center insight */}
           <div 
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-white border-4 border-blue-500 rounded-full flex items-center justify-center cursor-pointer shadow-lg hover:shadow-xl transition-all duration-300"
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-white border-4 border-blue-500 rounded-full flex items-center justify-center cursor-pointer shadow-lg hover:shadow-xl transition-all duration-300 z-20"
             onClick={() => setShowCenter(!showCenter)}
           >
             {showCenter ? (
@@ -101,40 +109,71 @@ export function BlameCycle() {
             )}
           </div>
 
-          {/* Cycle stages */}
-          {stages.map((stage) => (
-            <div
-              key={stage.id}
-              className={`absolute w-24 h-24 ${stage.position.desktop} cursor-pointer transition-all duration-300 ${
-                selectedStage === stage.id ? 'scale-110 z-10' : 'hover:scale-105'
-              }`}
-              onClick={() => setSelectedStage(selectedStage === stage.id ? null : stage.id)}
-            >
-              <div 
-                className="w-full h-full rounded-full border-4 flex items-center justify-center shadow-lg"
-                style={{ 
-                  backgroundColor: selectedStage === stage.id ? stage.color : '#ffffff',
-                  borderColor: stage.color,
-                  color: selectedStage === stage.id ? '#ffffff' : stage.color
-                }}
-              >
-                <span className="text-xs font-bold text-center px-2">
-                  {stage.title}
-                </span>
+          {/* Cycle stages and arrows */}
+          {stages.map((stage, index) => {
+            const radius = 200 // Distance from center - moved further out
+            const position = getCirclePosition(index, stages.length, radius)
+            const nextIndex = (index + 1) % stages.length
+            const nextPosition = getCirclePosition(nextIndex, stages.length, radius)
+            
+            return (
+              <div key={stage.id}>
+                {/* Stage circle */}
+                <div
+                  className={`absolute w-20 h-20 cursor-pointer transition-all duration-300 z-10 ${
+                    selectedStage === stage.id ? 'scale-110' : 'hover:scale-105'
+                  }`}
+                  style={{
+                    left: `calc(50% + ${position.x}px - 40px)`,
+                    top: `calc(50% + ${position.y}px - 40px)`
+                  }}
+                  onClick={() => setSelectedStage(selectedStage === stage.id ? null : stage.id)}
+                >
+                  <div 
+                    className="w-full h-full rounded-full border-4 flex items-center justify-center shadow-lg"
+                    style={{ 
+                      backgroundColor: selectedStage === stage.id ? stage.color : '#ffffff',
+                      borderColor: stage.color,
+                      color: selectedStage === stage.id ? '#ffffff' : stage.color
+                    }}
+                  >
+                    <span className="text-xs font-bold text-center px-1 leading-tight">
+                      {stage.title}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Arrow segment on perfect circle */}
+                <svg 
+                  className="absolute top-0 left-0 w-full h-full pointer-events-none z-5"
+                  style={{ overflow: 'visible' }}
+                >
+                  <circle
+                    cx="250"
+                    cy="250" 
+                    r="150"
+                    stroke={stage.color}
+                    strokeWidth="4"
+                    fill="none"
+                    opacity="0.9"
+                    strokeDasharray={`${(2 * Math.PI * 150) / stages.length * 0.8} ${(2 * Math.PI * 150) / stages.length * 0.2}`}
+                    strokeDashoffset={`${-index * (2 * Math.PI * 150) / stages.length}`}
+                    transform={`rotate(${(360 / stages.length * index)} 250 250)`}
+                  />
+                  
+                  {/* Arrowhead positioned at end of each segment */}
+                  <g transform={`rotate(${(360 / stages.length * (index + 0.8))} 250 250)`}>
+                    <polygon
+                      points="0,-6 12,0 0,6"
+                      fill="#6b7280"
+                      opacity="0.9"
+                      transform={`translate(${250 + 150}, 250) rotate(90)`}
+                    />
+                  </g>
+                </svg>
               </div>
-              
-              {/* Arrow to next stage */}
-              <div 
-                className="absolute top-1/2 left-full w-8 h-1 transform -translate-y-1/2"
-                style={{ backgroundColor: stage.color, opacity: 0.6 }}
-              >
-                <div 
-                  className="absolute right-0 top-1/2 transform -translate-y-1/2 w-0 h-0 border-l-4 border-t-2 border-b-2 border-l-current border-t-transparent border-b-transparent"
-                  style={{ color: stage.color }}
-                ></div>
-              </div>
-            </div>
-          ))}
+            )
+          })}
         </div>
       </div>
 
