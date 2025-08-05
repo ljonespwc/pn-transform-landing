@@ -39,7 +39,7 @@ export const CHAPTERS: Chapter[] = [
     title: "The Discovery", 
     subtitle: "Why 95% of Diets Fail",
     path: "/chapter-2",
-    backgroundColor: "light-blue"
+    backgroundColor: "white"
   },
   {
     id: 3,

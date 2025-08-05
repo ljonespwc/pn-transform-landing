@@ -16,15 +16,12 @@ export default function Chapter1() {
         {/* Main Headline Section */}
         <AnimatedSection direction="fade" duration={0.8}>
           <div className="text-center mb-12">
-            <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tight leading-tight" style={{ color: '#1e293b' }}>
+            <h1 className="text-5xl md:text-7xl font-black mb-12 tracking-tight leading-tight" style={{ color: '#1e293b' }}>
               The Real Reason You Can&apos;t Stick to Any Diet
               <span className="block text-4xl md:text-5xl mt-4 font-bold" style={{ color: '#475569' }}>
                 (It&apos;s Not What You Think)
               </span>
             </h1>
-            <p className="text-lg md:text-xl font-medium" style={{ color: '#475569' }}>
-              You recognize this story because you&apos;ve lived it. Maybe multiple times.
-            </p>
           </div>
         </AnimatedSection>
 
