@@ -113,8 +113,6 @@ export function BlameCycle() {
           {stages.map((stage, index) => {
             const radius = 200 // Distance from center - moved further out
             const position = getCirclePosition(index, stages.length, radius)
-            const nextIndex = (index + 1) % stages.length
-            const nextPosition = getCirclePosition(nextIndex, stages.length, radius)
             
             return (
               <div key={stage.id}>
