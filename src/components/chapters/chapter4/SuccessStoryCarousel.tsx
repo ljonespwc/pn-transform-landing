@@ -184,7 +184,7 @@ export function SuccessStoryCarousel() {
           <div className="bg-blue-50 border-2 border-blue-300 rounded-2xl p-8 shadow-lg">
             <div className="flex flex-col md:flex-row items-start space-y-6 md:space-y-0 md:space-x-8">
               {/* Photo */}
-              <div className="flex-shrink-0 mx-auto md:mx-0 mb-6 md:mb-0">
+              <div className="flex-shrink-0 mx-auto md:mx-0 mb-6 md:mb-0 md:mr-8">
                 <ImagePlaceholder
                   width={activeStoryData.photoWidth}
                   height={activeStoryData.photoHeight}
