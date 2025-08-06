@@ -22,7 +22,7 @@ export default function Chapter3() {
               <span className="block">Healthy Habits Inevitable</span>
             </h1>
             <p className="text-xl md:text-2xl font-medium" style={{ color: '#475569' }}>
-              What if sticking to things wasn&apos;t about willpower? What if it was about smart support?
+              What if sticking to things wasn&apos;t about willpower?
             </p>
           </div>
         </AnimatedSection>
@@ -70,15 +70,15 @@ export default function Chapter3() {
               <strong>TransformOS creates a complete support system that learns exactly what motivates you.</strong> It doesn&apos;t just predict problems—it sets you up for success through three breakthrough capabilities:
             </p>
             
-            <p className="text-lg md:text-xl leading-relaxed mb-6" style={{ color: '#1e293b' }}>
+            <p className="text-lg md:text-xl leading-relaxed mb-6 ml-6" style={{ color: '#1e293b' }}>
               <strong>Before challenges hit</strong>: TransformOS anticipates your habit obstacles 72 hours before they occur. &quot;Thursday&apos;s meeting always triggers stress eating.&quot; &quot;Travel disrupts your routine this weekend.&quot; &quot;You historically struggle on day 12 of any new program.&quot; The system prepares you with personalized strategies before willpower even gets tested.
             </p>
             
-            <p className="text-lg md:text-xl leading-relaxed mb-6" style={{ color: '#1e293b' }}>
+            <p className="text-lg md:text-xl leading-relaxed mb-6 ml-6" style={{ color: '#1e293b' }}>
               <strong>During difficult moments</strong>: When life inevitably gets messy, TransformOS delivers real-time intervention precisely when you need it most. Not generic reminders—intelligent support based on what actually works for your personality, schedule, and circumstances. &quot;Remember last time this happened? Here&apos;s what helped you then.&quot;
             </p>
             
-            <p className="text-lg md:text-xl leading-relaxed mb-6" style={{ color: '#1e293b' }}>
+            <p className="text-lg md:text-xl leading-relaxed mb-6 ml-6" style={{ color: '#1e293b' }}>
               <strong>After every small win</strong>: This is where the magic happens. TransformOS learns your unique encouragement patterns and delivers personalized reinforcement that makes healthy choices genuinely rewarding. Some people need immediate celebration. Others prefer progress milestones. The system discovers what creates sustainable motivation for <em>you</em> specifically.
             </p>
 
@@ -96,11 +96,11 @@ export default function Chapter3() {
             </p>
             
             <p className="text-lg md:text-xl leading-relaxed mb-6" style={{ color: '#1e293b' }}>
-              <strong>But technology alone isn&apos;t enough.</strong> That&apos;s why TransformOS works with coaches equipped with the <strong>PN Method</strong>—our proprietary methodology that builds sustainable behavior patterns first, restriction second.
+              <strong>But technology alone isn&apos;t enough.</strong> That&apos;s why TransformOS works with coaches equipped with the <strong>PN Method</strong>—our proprietary methodology that builds awareness first, optimization second.
             </p>
             
             <p className="text-lg md:text-xl leading-relaxed mb-6" style={{ color: '#1e293b' }}>
-              While other programs jump straight to &quot;eat this, not that,&quot; the PN Method focuses on <em>how</em> you eat before <em>what</em> you eat. First, you spend two weeks learning to slow down your eating. Then, you spend two weeks learning to eat to 80% full. Still no food restrictions. Just building the foundational awareness that makes everything else automatic.
+              While other programs jump straight to &quot;eat this, not that,&quot; the PN Method focuses on <em>how</em> you eat before <em>what</em> you eat. First, you spend two weeks learning to slow down your eating. Then, you spend two weeks learning to eat to 80% full. No rules about food—just building the foundational awareness that makes everything else automatic.
             </p>
             
             <p className="text-lg md:text-xl leading-relaxed mb-6 font-semibold" style={{ color: '#1e293b' }}>

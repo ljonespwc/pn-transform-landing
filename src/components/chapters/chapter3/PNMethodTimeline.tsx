@@ -24,7 +24,7 @@ const phases: TimelinePhase[] = [
     focus: '"How you eat" (slow eating practice)',
     techSupport: 'TransformOS tracks eating pace, provides gentle reminders',
     outcome: 'Awareness and mindfulness established',
-    description: 'Before we tell you what to eat, we focus on how you eat. You spend two weeks simply learning to slow down your eating pace. No food restrictions, just building awareness.',
+    description: 'Before we tell you what to eat, we focus on how you eat. You spend two weeks simply learning to slow down your eating pace. No food rules, just building awareness.',
     keyInsight: 'Most people eat so fast they miss hunger and satiety signals completely',
     color: '#e0f2fe',
     icon: '🧘'
@@ -36,7 +36,7 @@ const phases: TimelinePhase[] = [
     focus: '"Eating to 80% full" (hunger/satiety recognition)',
     techSupport: 'Pattern recognition helps identify true hunger vs. habits',
     outcome: 'Internal signals restored and trusted',
-    description: 'Now that you can eat slowly, you learn to recognize when you\'re actually satisfied. Still no food restrictions - just learning to trust your body\'s natural signals.',
+    description: 'Now that you can eat slowly, you learn to recognize when you\'re actually satisfied. Still no food rules - just learning to trust your body\'s natural signals.',
     keyInsight: 'Your body knows when it\'s satisfied, but diet culture taught you to ignore it',
     color: '#e8f5e8',
     icon: '🎯'
@@ -77,7 +77,7 @@ export function PNMethodTimeline() {
           PN Method: Building Lasting Habits from the Ground Up
         </h2>
         <p className="text-lg md:text-xl" style={{ color: '#475569' }}>
-          Healthy patterns first, food restrictions second
+          Healthy patterns first, food choices second
         </p>
       </div>
 
@@ -260,11 +260,11 @@ export function PNMethodTimeline() {
           
           <div className="bg-white rounded-xl p-6 border-2 border-green-300 mb-6">
             <p className="text-lg font-bold mb-4" style={{ color: '#16a34a' }}>
-              No food restrictions until healthy habits are automatic
+              No food rules until healthy habits are automatic
             </p>
             <p className="text-base leading-relaxed" style={{ color: '#1e293b' }}>
-              Traditional diets fail because they pile restrictions on top of unconscious eating patterns. 
-              The PN Method builds new patterns first, then optimization becomes natural and sustainable.
+              Traditional diets fail because they pile rules on top of unconscious eating patterns. 
+              The PN Method builds new awareness first, then better choices become natural and sustainable.
             </p>
           </div>
 

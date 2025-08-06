@@ -40,7 +40,7 @@ const ecosystemElements: EcosystemElement[] = [
     id: 'pn-method',
     title: 'PN Method Coaching',
     description: 'Human guidance with proven methodology',
-    contribution: 'Builds behavior patterns first, restrictions second',
+    contribution: 'Builds awareness first, food choices second',
     features: [
       '20 years of coaching methodology',
       'Behavior-first approach',
