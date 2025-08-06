@@ -343,12 +343,6 @@ export function AdherenceEcosystem() {
               <div className="text-6xl font-black mb-4 text-red-600">12%</div>
               <div className="text-xl font-bold mb-2 text-red-700">Traditional Approach</div>
               <div className="text-base text-red-600 mb-4">Industry average adherence rate</div>
-              <div className="space-y-2 text-left">
-                <div className="text-sm text-red-600">• Willpower-dependent</div>
-                <div className="text-sm text-red-600">• One-size-fits-all</div>
-                <div className="text-sm text-red-600">• Restrictions without behavior change</div>
-                <div className="text-sm text-red-600">• No real-world adaptation</div>
-              </div>
             </div>
             
             {/* PN Transform */}
@@ -356,33 +350,9 @@ export function AdherenceEcosystem() {
               <div className="text-6xl font-black mb-4 text-green-600">87%</div>
               <div className="text-xl font-bold mb-2 text-green-700">PN Transform Ecosystem</div>
               <div className="text-base text-green-600 mb-4">Integrated system adherence rate</div>
-              <div className="space-y-2 text-left">
-                <div className="text-sm text-green-600">• System-supported</div>
-                <div className="text-sm text-green-600">• Personalized psychology</div>
-                <div className="text-sm text-green-600">• Behavior patterns first</div>
-                <div className="text-sm text-green-600">• Real-world stress tested</div>
-              </div>
             </div>
           </div>
 
-          {/* Success Factor Breakdown */}
-          <div className="bg-white rounded-xl p-6 border-2 border-blue-200">
-            <h4 className="text-lg font-bold mb-4 text-center" style={{ color: '#1e293b' }}>
-              Success Factors That Create 87% Success Rate
-            </h4>
-            <div className="grid md:grid-cols-3 gap-4">
-              {successFactors.map((factor, index) => (
-                <div key={index} className="flex items-center space-x-2">
-                  <div className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-xs font-bold">
-                    ✓
-                  </div>
-                  <div className="text-sm font-medium" style={{ color: '#1e293b' }}>
-                    {factor}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
 
