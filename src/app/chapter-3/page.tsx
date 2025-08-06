@@ -5,7 +5,6 @@ import { AnimatedSection } from '@/components/ui/AnimatedSection'
 import { ScrollProgress } from '@/components/ui/ScrollProgress'
 import { ThreePhaseDemo } from '@/components/chapters/chapter3/ThreePhaseDemo'
 import { MotivationLearning } from '@/components/chapters/chapter3/MotivationLearning'
-import { PNMethodTimeline } from '@/components/chapters/chapter3/PNMethodTimeline'
 import { HealthyHabitAddiction } from '@/components/chapters/chapter3/HealthyHabitAddiction'
 import { AdherenceEcosystem } from '@/components/chapters/chapter3/AdherenceEcosystem'
 
@@ -148,12 +147,6 @@ export default function Chapter3() {
             <MotivationLearning />
           </AnimatedSection>
           
-          {/* PN Method Timeline - Blue Background */}
-          <div className="section-interactive">
-            <AnimatedSection direction="up" delay={0.3}>
-              <PNMethodTimeline />
-            </AnimatedSection>
-          </div>
           
           {/* Healthy Habit Addiction - White Background for contrast */}
           <AnimatedSection direction="up" delay={0.4}>

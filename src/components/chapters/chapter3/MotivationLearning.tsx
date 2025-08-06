@@ -67,27 +67,8 @@ const motivationTypes: MotivationType[] = [
   }
 ]
 
-const learningWeeks = [
-  {
-    week: 'Week 1',
-    title: 'Testing Different Types',
-    description: 'TransformOS experiments with various encouragement approaches to see what resonates with you'
-  },
-  {
-    week: 'Week 2-3',
-    title: 'Identifying Patterns',
-    description: 'The system analyzes your responses and identifies which motivation styles create the strongest positive reactions'
-  },
-  {
-    week: 'Week 4+',
-    title: 'Personalized Delivery',
-    description: 'Your unique motivation profile drives all encouragement, creating 73% higher adherence than generic approaches'
-  }
-]
-
 export function MotivationLearning() {
   const [selectedType, setSelectedType] = useState<string | null>(null)
-  const [showLearningProcess, setShowLearningProcess] = useState(false)
 
   return (
     <div className="py-8">
@@ -100,14 +81,6 @@ export function MotivationLearning() {
         </p>
       </div>
 
-      {/* AI Learning Image */}
-      <div className="flex justify-center mb-8">
-        <ImagePlaceholder 
-          width={400}
-          height={200}
-          description="AI brain learning patterns or personality assessment interface - represents personalized learning"
-        />
-      </div>
 
       {/* Motivation Types Grid */}
       <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-12">
@@ -183,44 +156,6 @@ export function MotivationLearning() {
         </div>
       )}
 
-      {/* Learning Process Section */}
-      <div className="max-w-4xl mx-auto mb-12">
-        <div className="text-center mb-8">
-          <h3 className="text-2xl font-bold mb-4" style={{ color: '#1e293b' }}>
-            How TransformOS Learns Your Motivation Profile
-          </h3>
-          <button
-            onClick={() => setShowLearningProcess(!showLearningProcess)}
-            className="bg-blue-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-700 transition-colors"
-          >
-            {showLearningProcess ? 'Hide Learning Process' : 'Show Learning Process'}
-          </button>
-        </div>
-
-        {showLearningProcess && (
-          <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8 border-2 border-blue-200">
-            <div className="space-y-8">
-              {learningWeeks.map((week, index) => (
-                <div key={week.week} className="flex items-start space-x-6">
-                  <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">
-                      {index + 1}
-                    </div>
-                  </div>
-                  <div className="flex-1">
-                    <h4 className="text-lg font-bold mb-2 text-blue-700">
-                      {week.week}: {week.title}
-                    </h4>
-                    <p className="text-base leading-relaxed" style={{ color: '#1e293b' }}>
-                      {week.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-      </div>
 
       {/* Results Statistics */}
       <div className="text-center">
