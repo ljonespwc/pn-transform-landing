@@ -32,7 +32,7 @@ const ecosystemElements: EcosystemElement[] = [
     color: '#0284c7',
     icon: '🤖',
     position: {
-      desktop: 'top-0 left-1/2 transform -translate-x-1/2',
+      desktop: 'top-2 left-1/2 transform -translate-x-1/2',
       mobile: 1
     }
   },
@@ -50,7 +50,7 @@ const ecosystemElements: EcosystemElement[] = [
     color: '#16a34a',
     icon: '👨‍🏫',
     position: {
-      desktop: 'top-1/4 right-0',
+      desktop: 'top-12 right-8',
       mobile: 2
     }
   },
@@ -68,7 +68,7 @@ const ecosystemElements: EcosystemElement[] = [
     color: '#dc2626',
     icon: '🌍',
     position: {
-      desktop: 'bottom-1/4 right-0',
+      desktop: 'bottom-8 right-12',
       mobile: 3
     }
   },
@@ -86,7 +86,7 @@ const ecosystemElements: EcosystemElement[] = [
     color: '#7c3aed',
     icon: '💜',
     position: {
-      desktop: 'bottom-0 left-1/2 transform -translate-x-1/2',
+      desktop: 'bottom-8 left-12',
       mobile: 4
     }
   },
@@ -104,7 +104,7 @@ const ecosystemElements: EcosystemElement[] = [
     color: '#f59e0b',
     icon: '📊',
     position: {
-      desktop: 'bottom-1/4 left-0',
+      desktop: 'top-12 left-8',
       mobile: 5
     }
   }
@@ -158,13 +158,13 @@ export function AdherenceEcosystem() {
             <div key={element.id}>
               {/* Element Circle */}
               <div
-                className={`absolute w-20 h-20 ${element.position.desktop} cursor-pointer transition-all duration-300 ${
+                className={`absolute w-24 h-24 ${element.position.desktop} cursor-pointer transition-all duration-300 ${
                   selectedElement === element.id ? 'scale-110 z-10' : 'hover:scale-105'
                 }`}
                 onClick={() => setSelectedElement(selectedElement === element.id ? null : element.id)}
               >
                 <div 
-                  className="w-full h-full rounded-full border-4 flex items-center justify-center shadow-lg text-white font-bold"
+                  className="w-full h-full rounded-full border-4 flex items-center justify-center shadow-lg font-bold"
                   style={{ 
                     backgroundColor: selectedElement === element.id ? element.color : '#ffffff',
                     borderColor: element.color,
@@ -178,39 +178,6 @@ export function AdherenceEcosystem() {
                 </div>
               </div>
 
-              {/* Connection Lines to Center */}
-              <svg 
-                className="absolute top-0 left-0 w-full h-full pointer-events-none"
-                style={{ overflow: 'visible' }}
-              >
-                <defs>
-                  <marker
-                    id={`arrow-${element.id}`}
-                    markerWidth="8"
-                    markerHeight="8"
-                    refX="6"
-                    refY="3"
-                    orient="auto"
-                    markerUnits="strokeWidth"
-                  >
-                    <polygon
-                      points="0,0 0,6 6,3"
-                      fill={element.color}
-                      opacity="0.7"
-                    />
-                  </marker>
-                </defs>
-                <line
-                  x1={`${192 + Math.cos((index * 72 - 90) * Math.PI / 180) * 80}`}
-                  y1={`${192 + Math.sin((index * 72 - 90) * Math.PI / 180) * 80}`}
-                  x2={`${192 + Math.cos((index * 72 - 90) * Math.PI / 180) * 25}`}
-                  y2={`${192 + Math.sin((index * 72 - 90) * Math.PI / 180) * 25}`}
-                  stroke={element.color}
-                  strokeWidth="3"
-                  opacity="0.7"
-                  markerEnd={`url(#arrow-${element.id})`}
-                />
-              </svg>
             </div>
           ))}
         </div>
