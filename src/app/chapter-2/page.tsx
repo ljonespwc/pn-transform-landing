@@ -31,6 +31,7 @@ export default function Chapter2() {
             mobileWidth={400}
             mobileHeight={300}
             description="Research data, charts, or scientists analyzing data - represents 20 years of discovery"
+            className="my-8"
           />
         </div>
 

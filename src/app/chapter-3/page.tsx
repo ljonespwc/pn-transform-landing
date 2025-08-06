@@ -34,6 +34,7 @@ export default function Chapter3() {
             mobileWidth={400}
             mobileHeight={300}
             description="Technology breakthrough, innovation lab, or smartphone with healthy apps - represents the engineering solution"
+            className="my-8"
           />
         </div>
 

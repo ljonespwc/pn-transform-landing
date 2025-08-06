@@ -33,6 +33,7 @@ export default function Chapter1() {
           mobileWidth={400}
           mobileHeight={300}
           description="Person looking frustrated/overwhelmed in front of mirror or scale - captures the emotional weight of repeated diet failures"
+          className="my-8"
         />
       </div>
 

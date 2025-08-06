@@ -35,6 +35,7 @@ export default function Chapter4() {
             mobileWidth={400}
             mobileHeight={300}
             description="Before/after transformation collage or success celebration - represents lasting results"
+            className="my-8"
           />
         </div>
 
@@ -62,6 +63,7 @@ export default function Chapter4() {
                 width={450}
                 height={300}
                 description="Sarah's before/after photos or celebrating her success - personal transformation story"
+                className="my-4"
               />
             </div>
 
@@ -86,6 +88,7 @@ export default function Chapter4() {
                 width={500}
                 height={350}
                 description="Executive with family or business professional - represents work-life balance success"
+                className="my-4"
               />
             </div>
             
@@ -125,6 +128,7 @@ export default function Chapter4() {
                 width={450}
                 height={300}
                 description="Working mom with children in kitchen or family meal scene - represents real-life integration"
+                className="my-4"
               />
             </div>
             
@@ -144,6 +148,7 @@ export default function Chapter4() {
             width={500}
             height={150}
             description="Multiple success stories collage or results dashboard - bridges narrative to interactive proof"
+            className="my-8"
           />
         </div>
 
@@ -187,6 +192,7 @@ export default function Chapter4() {
             width={400}
             height={250}
             description="Exclusive access or VIP invitation visual - builds desire for Chapter 5"
+            className="my-8"
           />
         </div>
 
