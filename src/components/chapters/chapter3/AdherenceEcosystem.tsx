@@ -158,9 +158,14 @@ export function AdherenceEcosystem() {
             <div key={element.id}>
               {/* Element Circle */}
               <div
-                className={`absolute w-24 h-24 ${element.position.desktop} cursor-pointer transition-all duration-300 ${
+                className={`absolute w-24 h-24 cursor-pointer transition-all duration-300 ${
                   selectedElement === element.id ? 'scale-110 z-10' : 'hover:scale-105'
                 }`}
+                style={{
+                  top: `${192 + Math.sin((index * 72 - 90) * Math.PI / 180) * 130}px`,
+                  left: `${192 + Math.cos((index * 72 - 90) * Math.PI / 180) * 130}px`,
+                  transform: 'translate(-50%, -50%)'
+                }}
                 onClick={() => setSelectedElement(selectedElement === element.id ? null : element.id)}
               >
                 <div 
