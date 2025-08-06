@@ -357,7 +357,7 @@ export function AdherenceEcosystem() {
               <div className="text-xl font-bold mb-2 text-green-700">PN Transform Ecosystem</div>
               <div className="text-base text-green-600 mb-4">Integrated system adherence rate</div>
               <div className="space-y-2 text-left">
-                <div className="text-sm text-green-600">• Infrastructure-supported</div>
+                <div className="text-sm text-green-600">• System-supported</div>
                 <div className="text-sm text-green-600">• Personalized psychology</div>
                 <div className="text-sm text-green-600">• Behavior patterns first</div>
                 <div className="text-sm text-green-600">• Real-world stress tested</div>

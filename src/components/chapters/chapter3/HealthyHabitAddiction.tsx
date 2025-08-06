@@ -161,12 +161,6 @@ export function HealthyHabitAddiction() {
           ))}
         </div>
 
-        {/* Central VS Message */}
-        <div className="text-center my-8">
-          <div className="inline-block bg-blue-100 border-2 border-blue-300 rounded-full px-8 py-4">
-            <span className="text-2xl font-bold text-blue-700">VS</span>
-          </div>
-        </div>
       </div>
 
       {/* Mobile Stacked Comparison */}
@@ -205,53 +199,10 @@ export function HealthyHabitAddiction() {
               </div>
             </div>
 
-            {index === 0 && (
-              <div className="text-center mb-6">
-                <div className="inline-block bg-blue-100 border border-blue-300 rounded-full px-6 py-2">
-                  <span className="text-lg font-bold text-blue-700">VS</span>
-                </div>
-              </div>
-            )}
           </div>
         ))}
       </div>
 
-      {/* Core Psychology Explanation */}
-      <div className="max-w-4xl mx-auto mb-12">
-        <div className="bg-gradient-to-r from-blue-50 to-purple-50 border-2 border-blue-200 rounded-2xl p-8">
-          <div className="text-center mb-6">
-            <div className="text-4xl mb-4">🧠</div>
-            <h3 className="text-2xl font-bold mb-4" style={{ color: '#1e293b' }}>
-              The Behavioral Loop is Identical
-            </h3>
-          </div>
-
-          <div className="grid md:grid-cols-4 gap-4 mb-6">
-            {behaviorLoop.map((step, index) => (
-              <div key={step.id} className="text-center">
-                <div className="bg-white rounded-xl p-4 border-2 border-blue-200 mb-2">
-                  <div className="text-3xl mb-2">{step.icon}</div>
-                  <div className="text-lg font-bold text-blue-700 mb-1">{step.title}</div>
-                  <div className="text-xs text-gray-600">{step.description}</div>
-                </div>
-                {index < behaviorLoop.length - 1 && (
-                  <div className="hidden md:block text-blue-400 text-2xl">→</div>
-                )}
-              </div>
-            ))}
-          </div>
-
-          <div className="bg-white rounded-xl p-6 border-2 border-purple-200 text-center">
-            <p className="text-lg font-bold mb-3" style={{ color: '#7c3aed' }}>
-              Same Psychology, Different Outcome
-            </p>
-            <p className="text-base leading-relaxed" style={{ color: '#1e293b' }}>
-              TransformOS hijacks the same psychological mechanisms that make you check your phone 150+ times per day, 
-              but redirects them toward healthy behaviors instead of mindless scrolling.
-            </p>
-          </div>
-        </div>
-      </div>
 
       {/* Interactive Feature Showcase */}
       <div className="max-w-3xl mx-auto mb-12">
@@ -260,10 +211,10 @@ export function HealthyHabitAddiction() {
             How TransformOS Creates Healthy Addiction
           </h3>
           
-          <div className="space-y-4">
-            <div className="flex items-center space-x-4 p-4 bg-green-50 rounded-xl border border-green-200">
-              <div className="text-2xl">🎯</div>
-              <div>
+          <div className="space-y-3">
+            <div className="flex items-center space-x-6 p-4 bg-green-50 rounded-xl border border-green-200">
+              <div className="text-2xl flex-shrink-0">🎯</div>
+              <div className="flex-1">
                 <div className="font-bold text-green-700">Trigger Engineering</div>
                 <div className="text-sm" style={{ color: '#1e293b' }}>
                   Creates environmental cues that automatically prompt healthy choices
@@ -271,9 +222,9 @@ export function HealthyHabitAddiction() {
               </div>
             </div>
             
-            <div className="flex items-center space-x-4 p-4 bg-blue-50 rounded-xl border border-blue-200">
-              <div className="text-2xl">🔄</div>
-              <div>
+            <div className="flex items-center space-x-6 p-4 bg-blue-50 rounded-xl border border-blue-200">
+              <div className="text-2xl flex-shrink-0">🔄</div>
+              <div className="flex-1">
                 <div className="font-bold text-blue-700">Behavior Simplification</div>
                 <div className="text-sm" style={{ color: '#1e293b' }}>
                   Makes healthy actions as easy as picking up your phone
@@ -281,9 +232,9 @@ export function HealthyHabitAddiction() {
               </div>
             </div>
             
-            <div className="flex items-center space-x-4 p-4 bg-purple-50 rounded-xl border border-purple-200">
-              <div className="text-2xl">🎁</div>
-              <div>
+            <div className="flex items-center space-x-6 p-4 bg-purple-50 rounded-xl border border-purple-200">
+              <div className="text-2xl flex-shrink-0">🎁</div>
+              <div className="flex-1">
                 <div className="font-bold text-purple-700">Reward Optimization</div>
                 <div className="text-sm" style={{ color: '#1e293b' }}>
                   Delivers personalized reinforcement that feels genuinely rewarding
@@ -298,7 +249,7 @@ export function HealthyHabitAddiction() {
       <div className="text-center">
         <div className="max-w-3xl mx-auto bg-white border-2 border-gray-200 rounded-2xl p-8 shadow-md">
           <p className="text-lg font-medium mb-4" style={{ color: '#1e293b' }}>
-            You&apos;re not lacking willpower. You&apos;re missing the right infrastructure.
+            You&apos;re not lacking willpower. You&apos;re missing the right support systems.
           </p>
           <p className="text-lg font-semibold" style={{ color: '#0284c7' }}>
             TransformOS gives you the same behavioral advantage that Big Tech uses, but for your health.
