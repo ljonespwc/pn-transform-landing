@@ -4,9 +4,7 @@ import { AnimatedSection } from '@/components/ui/AnimatedSection'
 import { ScrollProgress } from '@/components/ui/ScrollProgress'
 import { AssessmentPreview } from '@/components/chapters/chapter5/AssessmentPreview'
 import { GeographicAvailability } from '@/components/chapters/chapter5/GeographicAvailability'
-import { ExclusiveCommunity } from '@/components/chapters/chapter5/ExclusiveCommunity'
 import { WaitlistForm } from '@/components/chapters/chapter5/WaitlistForm'
-import { FutureVisionTimeline } from '@/components/chapters/chapter5/FutureVisionTimeline'
 
 export default function Chapter5() {
   return (
@@ -142,7 +140,7 @@ export default function Chapter5() {
                         Assessment Call
                       </h3>
                       <p className="text-base md:text-lg" style={{ color: '#475569' }}>
-                        We'll dive deep into your history, challenges, and goals to understand exactly what you need for lasting success.
+                        We&apos;ll dive deep into your history, challenges, and goals to understand exactly what you need for lasting success.
                       </p>
                     </div>
 
@@ -155,7 +153,7 @@ export default function Chapter5() {
                         Coach Matching
                       </h3>
                       <p className="text-base md:text-lg" style={{ color: '#475569' }}>
-                        We'll present you with 2-3 carefully selected coaches whose expertise and approach align perfectly with your specific needs.
+                        We&apos;ll present you with 2-3 carefully selected coaches whose expertise and approach align perfectly with your specific needs.
                       </p>
                     </div>
 
@@ -168,7 +166,7 @@ export default function Chapter5() {
                         Your Choice
                       </h3>
                       <p className="text-base md:text-lg" style={{ color: '#475569' }}>
-                        You'll have brief conversations with each coach to find the perfect fit, then begin your transformation journey together.
+                        You&apos;ll have brief conversations with each coach to find the perfect fit, then begin your transformation journey together.
                       </p>
                     </div>
                   </div>
@@ -177,7 +175,7 @@ export default function Chapter5() {
                   <div className="text-center mt-12">
                     <div className="bg-white rounded-2xl p-6 border border-primary-200 max-w-2xl mx-auto">
                       <p className="text-lg md:text-xl font-medium" style={{ color: '#1e293b' }}>
-                        <strong>This isn't a one-size-fits-all approach.</strong> We take the time to match you with the right coach because your success depends on having support that truly understands your unique situation.
+                        <strong>This isn&apos;t a one-size-fits-all approach.</strong> We take the time to match you with the right coach because your success depends on having support that truly understands your unique situation.
                       </p>
                     </div>
                   </div>
