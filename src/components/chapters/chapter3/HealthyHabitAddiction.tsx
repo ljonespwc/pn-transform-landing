@@ -165,7 +165,7 @@ export function HealthyHabitAddiction() {
 
       {/* Mobile Stacked Comparison */}
       <div className="md:hidden max-w-lg mx-auto mb-12">
-        {patterns.map((pattern, index) => (
+        {patterns.map((pattern) => (
           <div key={pattern.id}>
             <div
               className={`${pattern.color.bg} border-2 ${pattern.color.border} rounded-2xl p-6 shadow-md mb-6`}

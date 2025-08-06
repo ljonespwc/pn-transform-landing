@@ -110,13 +110,6 @@ const ecosystemElements: EcosystemElement[] = [
   }
 ]
 
-const successFactors = [
-  'Technology + Human integration',
-  'Behavior-first methodology',
-  'Personalized motivation system',
-  'Real-world stress testing',
-  'Massive data learning advantage'
-]
 
 export function AdherenceEcosystem() {
   const [selectedElement, setSelectedElement] = useState<string | null>(null)

@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import { ImagePlaceholder } from '@/components/ui/ImagePlaceholder'
 
 interface MotivationType {
   id: string
@@ -198,7 +197,7 @@ export function MotivationLearning() {
             Your motivation fingerprint is as unique as you are.
           </p>
           <p className="text-lg font-semibold" style={{ color: '#0284c7' }}>
-            TransformOS discovers exactly what makes healthy choices irresistible for you.
+            TransformOS discovers exactly what makes healthy choices irresistible for you, then shares these insights with your coach for personalized support.
           </p>
         </div>
       </div>

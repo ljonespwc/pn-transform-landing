@@ -41,7 +41,7 @@ const phases: Phase[] = [
     subtitle: 'Real-Time Support',
     description: 'Intelligent intervention precisely when you need it most',
     scenario: '"Driving past trigger restaurant during stressful day"',
-    intervention: '"Remember your goal? Try that new podcast episode instead. Drive-through closes in 30 seconds."',
+    intervention: '"Remember your goal? Your coach suggested that podcast episode for exactly this situation. Drive-through closes in 30 seconds."',
     color: {
       bg: 'bg-red-50',
       border: 'border-red-300',
