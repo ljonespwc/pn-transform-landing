@@ -96,7 +96,7 @@ export function HealthyHabitAddiction() {
     <div className="py-8">
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#1e293b' }}>
-          Become Addicted to Healthy Habits (Not Your Phone)
+          Get Hooked on Healthy Habits (Not Your Phone)
         </h2>
         <p className="text-lg md:text-xl" style={{ color: '#475569' }}>
           Same psychology, different outcome

@@ -74,10 +74,10 @@ export function ThreePhaseDemo() {
     <div className="py-8">
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#1e293b' }}>
-          How TransformOS Makes Adherence Automatic
+          How TransformOS Makes Healthy Habits Automatic
         </h2>
         <p className="text-lg md:text-xl" style={{ color: '#475569' }}>
-          Three breakthrough capabilities that engineer success
+          Three breakthrough capabilities that set you up for success
         </p>
       </div>
 
@@ -224,7 +224,7 @@ export function ThreePhaseDemo() {
             Notice the pattern? TransformOS doesn&apos;t rely on your willpower.
           </p>
           <p className="text-lg font-semibold" style={{ color: '#0284c7' }}>
-            It creates an intelligent support system that makes healthy choices inevitable.
+            It creates a smart support system that makes healthy choices feel effortless.
           </p>
         </div>
       </div>

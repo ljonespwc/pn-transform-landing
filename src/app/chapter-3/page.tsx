@@ -19,10 +19,10 @@ export default function Chapter3() {
           <div className="text-center mb-12">
             <h1 className="text-5xl md:text-7xl font-black mb-8 tracking-tight leading-tight" style={{ color: '#1e293b' }}>
               We Built the First System That Makes
-              <span className="block">Adherence Inevitable</span>
+              <span className="block">Healthy Habits Inevitable</span>
             </h1>
             <p className="text-xl md:text-2xl font-medium" style={{ color: '#475569' }}>
-              What if adherence wasn&apos;t about willpower? What if it was about infrastructure?
+              What if sticking to things wasn&apos;t about willpower? What if it was about smart support?
             </p>
           </div>
         </AnimatedSection>
@@ -46,7 +46,7 @@ export default function Chapter3() {
             </p>
             
             <p className="text-lg md:text-xl leading-relaxed mb-6" style={{ color: '#1e293b' }}>
-              Social media companies solved the adherence problem. They figured out how to make behaviors stick without relying on human willpower. They built <em>behavior infrastructure</em>.
+              Social media companies solved the sticking-to-things problem. They figured out how to make behaviors stick without relying on human willpower. They built <em>invisible systems</em> that make habits automatic.
             </p>
 
             {/* Smartphone Addiction Image */}
@@ -67,7 +67,7 @@ export default function Chapter3() {
             </p>
             
             <p className="text-lg md:text-xl leading-relaxed mb-6" style={{ color: '#1e293b' }}>
-              <strong>TransformOS creates a complete behavior change ecosystem that learns exactly what motivates you.</strong> It doesn&apos;t just predict problems—it engineers success through three breakthrough capabilities:
+              <strong>TransformOS creates a complete support system that learns exactly what motivates you.</strong> It doesn&apos;t just predict problems—it sets you up for success through three breakthrough capabilities:
             </p>
             
             <p className="text-lg md:text-xl leading-relaxed mb-6" style={{ color: '#1e293b' }}>
@@ -108,15 +108,15 @@ export default function Chapter3() {
             </p>
             
             <p className="text-lg md:text-xl leading-relaxed mb-6" style={{ color: '#1e293b' }}>
-              Your coach isn&apos;t just giving you meal plans. They&apos;re using TransformOS data to understand your unique patterns—when you succeed, when you struggle, what motivates you, what derails you. Then they help you build behavior infrastructure around your actual life, not some fantasy version of perfect adherence.
+              Your coach isn&apos;t just giving you meal plans. They&apos;re using TransformOS data to understand your unique patterns—when you succeed, when you struggle, what motivates you, what derails you. Then they help you build supportive systems around your actual life, not some fantasy version of perfect behavior.
             </p>
             
             <p className="text-lg md:text-xl leading-relaxed mb-6 font-bold" style={{ color: '#1e293b' }}>
-              <strong>This is behavior infrastructure</strong>: Technology that handles anticipation, intervention, and encouragement automatically, combined with proven methodology that builds lasting change from the ground up.
+              <strong>This is smart support</strong>: Technology that handles anticipation, intervention, and encouragement automatically, combined with proven methodology that builds lasting change from the ground up.
             </p>
             
             <p className="text-lg md:text-xl leading-relaxed mb-6" style={{ color: '#1e293b' }}>
-              <strong>The result?</strong> 87% adherence rate versus the industry average of 12%. Not because our clients have more willpower. Because they have better infrastructure that makes healthy choices irresistible.
+              <strong>The result?</strong> 87% success rate versus the industry average of 12%. Not because our clients have more willpower. Because they have better systems that make healthy choices irresistible.
             </p>
             
             <p className="text-lg md:text-xl leading-relaxed mb-6 font-bold" style={{ color: '#1e293b' }}>

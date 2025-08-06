@@ -125,10 +125,10 @@ export function AdherenceEcosystem() {
     <div className="py-8">
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#1e293b' }}>
-          Complete Behavior Change Ecosystem
+          Complete Support System
         </h2>
         <p className="text-lg md:text-xl" style={{ color: '#475569' }}>
-          Five integrated elements that make adherence inevitable
+          Five integrated elements that make success inevitable
         </p>
       </div>
 
@@ -330,7 +330,7 @@ export function AdherenceEcosystem() {
         <div className="bg-gradient-to-r from-red-50 via-white to-green-50 border-2 border-gray-200 rounded-2xl p-8 shadow-xl">
           <div className="text-center mb-8">
             <h3 className="text-2xl font-bold mb-4" style={{ color: '#1e293b' }}>
-              The Adherence Revolution
+              The Success Revolution
             </h3>
             <p className="text-lg" style={{ color: '#6b7280' }}>
               Integrated system vs. traditional approaches
@@ -368,7 +368,7 @@ export function AdherenceEcosystem() {
           {/* Success Factor Breakdown */}
           <div className="bg-white rounded-xl p-6 border-2 border-blue-200">
             <h4 className="text-lg font-bold mb-4 text-center" style={{ color: '#1e293b' }}>
-              Success Factors That Create 87% Adherence
+              Success Factors That Create 87% Success Rate
             </h4>
             <div className="grid md:grid-cols-3 gap-4">
               {successFactors.map((factor, index) => (
@@ -390,10 +390,10 @@ export function AdherenceEcosystem() {
       <div className="text-center">
         <div className="max-w-3xl mx-auto bg-white border-2 border-gray-200 rounded-2xl p-8 shadow-md">
           <p className="text-lg font-medium mb-4" style={{ color: '#1e293b' }}>
-            This isn&apos;t about trying harder. It&apos;s about having better infrastructure.
+            This isn&apos;t about trying harder. It&apos;s about having better support systems.
           </p>
           <p className="text-lg font-semibold" style={{ color: '#0284c7' }}>
-            When all five elements work together, adherence becomes inevitable.
+            When all five elements work together, success becomes inevitable.
           </p>
         </div>
       </div>

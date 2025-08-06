@@ -74,10 +74,10 @@ export function PNMethodTimeline() {
     <div className="py-8">
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#1e293b' }}>
-          PN Method: Building Behavior Infrastructure from the Ground Up
+          PN Method: Building Lasting Habits from the Ground Up
         </h2>
         <p className="text-lg md:text-xl" style={{ color: '#475569' }}>
-          Behavior patterns first, food restrictions second
+          Healthy patterns first, food restrictions second
         </p>
       </div>
 
@@ -260,7 +260,7 @@ export function PNMethodTimeline() {
           
           <div className="bg-white rounded-xl p-6 border-2 border-green-300 mb-6">
             <p className="text-lg font-bold mb-4" style={{ color: '#16a34a' }}>
-              No food restrictions until behavior patterns are automatic
+              No food restrictions until healthy habits are automatic
             </p>
             <p className="text-base leading-relaxed" style={{ color: '#1e293b' }}>
               Traditional diets fail because they pile restrictions on top of unconscious eating patterns. 
