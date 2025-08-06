@@ -56,11 +56,6 @@ const supportingStats: Statistic[] = [
 
 const comparisonData = [
   {
-    category: 'Success Rate',
-    traditional: '12% success rate',
-    pnTransform: '87% success rate'
-  },
-  {
     category: 'Foundation',
     traditional: 'Rely on willpower',
     pnTransform: 'Built-in support system'
